@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1a1a1a, #444);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;   /* reduced vertical padding */
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;   /* tighter spacing */
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 0.5rem;      /* smaller gap below text */
+  background: #e63946;
+  color: #fff;
+  padding: 0.6rem 1.2rem;  /* slightly smaller button */
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.hero .btn:hover {
+  background: #d62828;
+}
+
+/* Navbar */
+.navbar {
+  background: #222;
+  padding: 0.75rem;        /* slightly reduced padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;     /* ensures vertical alignment */
+  gap: 1rem;
+}
+.navbar a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.6;        /* consistent height */
+}
+.navbar a:hover {
+  background: #444;
+  border-radius: 4px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: flex;           /* aligns dropdown link like other nav links */
+  align-items: center;
+}
+.dropdown > a {
+  cursor: pointer;
+  padding: 0.5rem 1rem;    /* match other nav links */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #444;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background: #555;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.container h2 {
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #e63946;
+  padding-bottom: 0.25rem;
+}
+.container section {
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+footer .socials,
+footer .socials2 {
+  margin: 0.5rem 0;
+}
+footer .socials a,
+footer .socials2 a {
+  color: #e63946;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer .socials a:hover,
+footer .socials2 a:hover {
+  color: #fff;
+}

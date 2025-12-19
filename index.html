@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <title>Jed Geary</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Make sure the SVG fills the viewport */
+    #mesh-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* push behind content */
+    }
+  </style>
 </head>
 <body>
 
@@ -16,7 +27,6 @@
 
   <nav class="navbar">
     <a href="/">Home</a>
-  
     <div class="dropdown">
       <a href="/voiceover/">Voiceover</a>
       <div class="dropdown-content">
@@ -24,28 +34,22 @@
         <a href="/voiceover/studio/">Studio Specs</a>
       </div>
     </div>
-  
     <a href="/contact/">Contact</a>
   </nav>
-  
 
   <main class="container">
     <section>
       <h2>Welcome</h2>
       <p>This is the central hub for my creative work.</p>
     </section>
-
   </main>
 
   <footer>
-
     <div class="socials">
       <a href="https://www.youtube.com/@de_buffer" target="_blank">YouTube</a> |
       <a href="https://www.twitch.tv/de_buffer" target="_blank">Twitch</a> |
       <a href="https://www.tiktok.com/@de_buffer" target="_blank">TikTok</a> 
-
     </div>
-
     <div class="socials2">
       <a href="https://www.facebook.com/profile.php?id=61584592328968" target="_blank">Facebook</a> |
       <a href="https://bsky.app/profile/jedgeary.com" target="_blank">Bluesky</a> |
@@ -53,8 +57,8 @@
       <a href="https://www.instagram.com/jedgeary" target="_blank">Instagram</a> |
       <a href="https://www.linkedin.com/in/jed-geary-43792235a/" target="_blank">LinkedIn</a>
     </div>
-  
     <p>&copy; 2025 Jed Geary | All Rights Reserved</p>
   </footer>
+
 </body>
 </html>
